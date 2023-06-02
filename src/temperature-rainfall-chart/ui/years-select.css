@@ -1,12 +1,13 @@
 .temperature-rainfall-chart .container .content .filters .years-select {
   display: flex;
   flex-direction: row;
+}
 
-  & .start-year, & .finish-year {
-      flex: 1;
-  }
+.temperature-rainfall-chart .container .content .filters .years-select .finish-year {
+  border-left: 0;
+}
 
-  .finish-year {
-      border-left: 0;
-  }
+.temperature-rainfall-chart .container .content .filters .years-select .start-year,
+.temperature-rainfall-chart .container .content .filters .years-select .finish-year {
+  flex: 1;
 }

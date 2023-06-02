@@ -1,7 +1,8 @@
 .temperature-rainfall-chart {
     padding: 20px;
 
-    & .container {
+    /*  firefox неподхватывает вложенность //= */
+    /* & .container {
         display: flex;
         flex-direction: row;
 
@@ -9,9 +10,9 @@
             display: flex;
             flex-direction: column;
 
-             & .precipitation {
+            & .precipitation {
                 margin-top: 5px;
-             }
+            }
         }
 
         & .content {
@@ -22,5 +23,28 @@
                 margin-top: 5px;
             }
         }
-    }
+    } */
+}
+
+.temperature-rainfall-chart .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.temperature-rainfall-chart .container .bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature-rainfall-chart .container .bar .precipitation {
+    margin-top: 5px;
+}
+
+.temperature-rainfall-chart .container .content {
+    min-width: 500px;
+    margin-left: 10px;
+}
+
+.temperature-rainfall-chart .container .content .container {
+    margin-top: 5px;
 }
