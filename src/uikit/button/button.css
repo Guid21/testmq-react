@@ -1,0 +1,10 @@
+/* Состояния не учитывал */
+.custom-button {
+    background-color: var(--primary);
+    padding: 8px 10px;
+    color: var(--text-color-white);
+    font-weight: 700;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+}

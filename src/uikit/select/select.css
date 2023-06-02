@@ -1,0 +1,14 @@
+.custom-select {
+    border: 2px solid var(--primary);
+    border-radius: 0;
+    padding: 5px;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 18px;
+    appearance:none;
+    background-image: url('data:image/svg+xml,<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.7066 1L10 13.1347L2.29343 1L17.7066 1Z" stroke="%23808080" stroke-width="2"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: 8px;
+    position: relative;
+}

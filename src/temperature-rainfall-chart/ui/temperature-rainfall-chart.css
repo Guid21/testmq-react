@@ -1,0 +1,26 @@
+.temperature-rainfall-chart {
+    padding: 20px;
+
+    & .container {
+        display: flex;
+        flex-direction: row;
+
+        & .bar {
+            display: flex;
+            flex-direction: column;
+
+             & .precipitation {
+                margin-top: 5px;
+             }
+        }
+
+        & .content {
+            min-width: 500px;
+            margin-left: 10px;
+
+            & .container {
+                margin-top: 5px;
+            }
+        }
+    }
+}
