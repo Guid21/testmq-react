@@ -1,5 +1,4 @@
 import { ItemData } from "../../../types";
-import { getData } from "../../../utils";
 
 const DB_NAME = "test-mq";
 let request: IDBOpenDBRequest;

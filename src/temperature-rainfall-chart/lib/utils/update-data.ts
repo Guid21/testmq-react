@@ -95,7 +95,7 @@ export const updateData = (
       } else {
         // если данных нет, то сначала пытаемся их получить, и доавить в дб, и после этого обновить сам стор
 
-        const serverData = await getData<ItemData>(`../data/${typeChart}.json`); // получаем данные с сервера
+        const serverData = await getData<ItemData>(`/${typeChart}.json`); // получаем данные с сервера
         // перекладываю данные с сервера в мапу, что бы не бегать каждый раз по ней (чередз редьюс с деструктурезацией ну очень дорого было)
         const serverDataMap: Record<string, ItemData> = {};
         serverData.forEach((item) => (serverDataMap[item.t] = item));
